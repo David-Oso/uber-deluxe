@@ -28,5 +28,4 @@ public class Referee {
     @Enumerated(EnumType.STRING)
     private Gender gender;
     private String phoneNumber;
-
 }

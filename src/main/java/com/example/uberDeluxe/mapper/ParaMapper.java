@@ -2,9 +2,7 @@ package com.example.uberDeluxe.mapper;
 
 import com.example.uberDeluxe.data.dto.request.RegisterPassengerRequest;
 import com.example.uberDeluxe.data.models.AppUser;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
 public class ParaMapper {
     public static AppUser map(RegisterPassengerRequest request){
         AppUser appUser = new AppUser();

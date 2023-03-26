@@ -22,6 +22,4 @@ public class Passenger {
     @OneToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JsonUnwrapped
     private AppUser userDetails;
-
-
 }

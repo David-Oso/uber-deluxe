@@ -5,12 +5,12 @@ import lombok.*;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Builder
+@Entity
 public class Driver {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,10 +19,8 @@ public class Driver {
     @OneToOne
     private Address address;
     private Gender gender;
-    private String licenseId;
     private String licenseImage;
     private int age;
-
     @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Referee referee;

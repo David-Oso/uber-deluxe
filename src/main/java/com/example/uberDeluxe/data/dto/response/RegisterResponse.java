@@ -10,6 +10,5 @@ import lombok.*;
 public class RegisterResponse {
     private Long id;
     private String message;
-    private int code;
     private boolean isSuccess;
 }

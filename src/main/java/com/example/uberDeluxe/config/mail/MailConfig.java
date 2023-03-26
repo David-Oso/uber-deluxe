@@ -1,4 +1,4 @@
-package com.example.uberDeluxe.config;
+package com.example.uberDeluxe.config.mail;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

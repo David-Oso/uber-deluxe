@@ -11,9 +11,9 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Getter
 @Setter
+@Getter
+@Entity
 public class BankInformation {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -8,11 +8,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.web.multipart.MultipartFile;
 
-@Entity
+import java.util.Set;
+
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
+@Entity
 @Setter
+@Getter
 public class AppUser {
     @JsonIgnore
     @Id
@@ -20,8 +22,11 @@ public class AppUser {
     private Long id;
     private String name;
     private String password;
+//    @Column(unique = true)
     private String email;
-    @Transient
-    private MultipartFile profileImage;
+    private String profileImage;
+    @Enumerated(EnumType.STRING)
+    private Set<Role> roles;
     private String createdAt;
+    private Boolean isEnabled;
 }
